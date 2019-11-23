@@ -5,7 +5,6 @@
 #ifndef LAB8_MYLINKEDLIST_HPP
 #define LAB8_MYLINKEDLIST_HPP
 #include "Node.hpp"
-#include <list>
 template <typename T>
 class MyLinkedList{
 private:
@@ -22,6 +21,7 @@ public:
         head = newNode;
         return newNode;
     }
+
     Node<T> * pushBack(T data){
     if(head == NULL){
     pushFront(data);
